@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+    <main>
+
+        <!---------dashboard Section START ---------->
+        <section class="dashboard-area">
+            <div class="container">
+                <div class="dashboard__content">
+                    <div class="bar__icon">
+                        <button type="button" class="humbergar siteBar-btn" onclick="toggleClass()">
+                            <span></span>
+                        </button>
+                    </div>
+                    <h3>Webbasierte Kasse</h3>
+                    <div class="src__wrp">
+                        <input type="text" class="src__blk" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                        
+                        <ul id="myUL">
+                            <li>
+                                <a href="#">
+                                    <i><img src="img/item-1.svg" alt=""></i> 
+                                    <span>Hamster Keramiknapf 100 ml</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i><img src="img/item-2.svg" alt=""></i>
+                                    <span>Harmony Cat Adult Geflugel 2 kg</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i><img src="img/item-1.svg" alt=""></i> 
+                                    <span>Hamster Keramiknapf 100 ml</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i><img src="img/item-2.svg" alt=""></i>
+                                    <span>Harmony Cat Adult Geflugel 2 kg</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i><img src="img/item-1.svg" alt=""></i> 
+                                    <span>Hamster Keramiknapf 100 ml</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="">
+                                    <i><img src="img/item-2.svg" alt=""></i>
+                                    <span>Harmony Cat Adult Geflugel 2 kg</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="table__blk">
+                        <table>
+                            <thead>
+                                <th>Artikel</th>
+                                <th>EP</th>
+                                <th>Menge</th>
+                                <th>Total</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="">
+                                            <i><img src="img/item-1.svg" alt=""></i>
+                                            <span>Hamster Keramiknapf 100 ml</span>
+                                        </a>
+                                    </td>
+                                    <td>22.90</td>
+                                    <td>1</td>
+                                    <td>22.90</td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td>
+                                        <a href="#" class="">
+                                            <i><img src="img/item-1.svg" alt=""></i>
+                                            <span>Hamster Keramiknapf 100 ml</span>
+                                        </a>
+                                    </td>
+                                    <td>22.90</td>
+                                    <td>1</td>
+                                    <td>22.90</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="">
+                                            <i><img src="img/item-2.svg" alt=""></i>
+                                            <span>Harmony Cat Adult Geflugel 2 kg</span>
+                                        </a>
+                                    </td>
+                                    <td>22.90</td>
+                                    <td>1</td>
+                                    <td>22.90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------dashboard Section End ---------->
+
+        <div class="side__bar">
+            <h4>Bon</h4>
+            <div class="content__blk">
+                <h5>Payment method</h5>
+                <div class="btn__wrp">
+                    <input type="radio" name="pm" id="pm-1">
+                    <input type="radio" name="pm" id="pm-2">
+                    <label for="pm-1" class="pm-1">Swiss Bank notes</label>
+                    <label for="pm-2" class="pm-2">Karte EFT</label>
+                </div>
+            </div>
+            
+            <div class="content__blk">
+                <h5>Payment method</h5>
+                <div class="btn__wrp sqr">
+                    <input type="radio" name="cb" id="cb-1">
+                    <input type="radio" name="cb" id="cb-2">
+                    <input type="radio" name="cb" id="cb-3">
+                    <input type="radio" name="cb" id="cb-4">
+                    <input type="radio" name="cb" id="cb-5">
+                    <label for="cb-1" class="cb-1">10 CHF</label>
+                    <label for="cb-2" class="cb-2">20 CHF</label>
+                    <label for="cb-3" class="cb-3">50 CHF</label>
+                    <label for="cb-4" class="cb-4">100 CHF</label>
+                    <label for="cb-5" class="cb-5">200 CHF</label>
+                </div>
+            </div>
+
+            <div class="content__blk">
+                <h5>Zahlungszusammenfassung</h5>
+                <ul>
+                    <li><span>Total:</span> <span>27.80 CHF</span></li>
+                    <li><span>Bezahlt:</span> <span>0.00 CHF</span></li>
+                </ul>
+            </div>
+
+            <div class="content__blk">
+                <h5>Wechselgeld</h5>
+                <ul>
+                    <li><span>Restbetrag:</span> <span>27.80 CHF</span></li>
+                    <li><span>Retourgeld:</span> <span>0.00 CHF</span></li>
+                </ul>
+            </div>
+
+            <div class="side__btns">
+                <button type="button">Bon abbrechen</button>
+                <button type="button" class="active">Bon drucken</button>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        let p = document.querySelector('.siteBar-btn');
+        let mNav = document.querySelector('.side__bar');
+        let body = document.querySelector('body');
+        
+        function toggleClass() {
+          p.classList.toggle('active');
+          mNav.classList.toggle('show');
+          body.classList.toggle('overflow-hidden');
+        }
+        
+        
+        </script>
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+    </body>
+</html>
+

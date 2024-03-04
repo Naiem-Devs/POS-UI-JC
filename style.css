@@ -1,0 +1,517 @@
+/*   Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======font family=========
+*/
+
+:root{
+
+  --thmColor: #037165;
+  --textColor: fff;
+
+  --f18 : 18px;
+  --f20 : 20px;
+  --f22 : 22px;
+  --f24 : 24px;
+  --f28 : 28px;
+  --f30 : 30px;
+  --f32 : 32px;
+  --f36 : 36px;
+  --f40 : 40px;
+  --f48 : 48px;
+
+}
+
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+}
+  
+button {
+  cursor: pointer; 
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+a,
+button {
+  color: inherit;
+  outline: medium none; 
+  text-decoration: none;
+}
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
+
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px; 
+  font-weight: 700;
+ }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+
+
+/* default-css END 
+================================== */
+
+
+/* humbergar */
+.bar__icon{
+  display: none;
+}
+
+.humbergar {
+  cursor: pointer;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.humbergar span, 
+.humbergar span:before, 
+.humbergar span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 28px;
+  background: var(--thmColor);
+  position: relative;
+  display: block;
+  content: '';
+  transition: all 250ms ease-in-out;
+}
+
+.bar__icon {
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    z-index: 9999;
+}
+.humbergar span:before {
+  top: -9px;
+}
+.humbergar span:after {
+  bottom: -7px;
+}
+
+.humbergar.active span {
+  background-color: transparent;
+}
+.humbergar.active span:before {
+  top:0px;
+  transform: rotate(44deg);
+}
+
+.humbergar.active span:before, .humbergar.active span:after {
+    background: #fff;
+}
+
+.humbergar.active span:after {
+  bottom: 2px;
+  transform: rotate(-45deg);
+}
+ 
+/* humbarger END */
+ 
+
+
+
+
+
+ 
+.dashboard-area {width: 100%;padding: 50px 50px 0;padding-right: 30px;position: relative;}
+
+body:after {content: "";position: absolute;width: 100%;height: 100%;top: 0;left: 0;background: #0004;transition: all .3s;opacity: 0;pointer-events: none;}
+
+body.overflow-hidden:after {
+    opacity: 1;
+}
+
+main {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    justify-content: space-between;
+}
+.container {
+}
+.dashboard__content {
+}
+
+.src__wrp {
+    position: relative;
+}
+
+
+.src__blk {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000 !important;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+input:focus ~ ul#myUL {
+    display: block;
+}
+
+.dashboard__content > h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--thmColor);
+}
+.table__blk {
+}
+
+.table__blk table {
+    vertical-align: middle;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table__blk th {
+    background: var(--thmColor);
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.table__blk td {
+    text-align: center;
+    background: #F6F6F6;
+    padding: 10px;
+    border: none;
+    gap: 0;
+}
+
+.table__blk td a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.table__blk td:first-child {
+    text-align: left;
+}
+
+.table__blk th:first-child {
+    text-align: left;
+    padding-left: 67px;
+}
+.bg-white {
+}
+
+.bg-white td {
+    background: #fff;
+}
+.side__bar {top: 0;right: 0;background: var(--thmColor);color: #fff;/* height: 86vh; */max-width: 370px;padding: 30px;width: 100%;padding-top: 100px;display: flex;flex-direction: column;justify-content: space-between;/* height: 100vh; */}
+
+.side__bar h5 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.side__bar h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.content__blk {margin-bottom: 50px;}
+
+.side__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.side__btns button {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    display: block;
+}
+
+.side__btns button.active {
+    background: #fff;
+    color: var(--thmColor);
+}
+
+.content__blk ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.btn__wrp {display: flex;gap: 10px;}
+
+.btn__wrp.sqr {
+    flex-wrap: wrap;
+}
+
+.btn__wrp.sqr label {
+    border-radius: 0;
+    width: 95px;
+    padding: 0;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__wrp label {
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn__wrp input {
+    display: none;
+}
+
+.btn__wrp #pm-1:checked ~ .pm-1 ,
+.btn__wrp #pm-2:checked ~ .pm-2 ,
+
+.btn__wrp #cb-1:checked ~ .cb-1 ,
+.btn__wrp #cb-2:checked ~ .cb-2 ,
+.btn__wrp #cb-3:checked ~ .cb-3 ,
+.btn__wrp #cb-4:checked ~ .cb-4 ,
+.btn__wrp #cb-5:checked ~ .cb-5 
+{
+    background: #fff;
+    color: var(--thmColor);
+}
+
+
+
+
+
+
+
+#myInput {
+  background-image: url('img/src.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 11px;
+  border: none;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+/*============ Area Start =============*/
+
+/*============ Area End =============*/
+
+
+/*============ Area Start =============*/
+
+/*============ Area End =============*/
+
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .side__bar {
+      max-width: 320px;
+  }
+  
+  .dashboard-area {
+      padding-left: 30px;
+  }
+
+}
+
+
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .bar__icon{
+    display: flex;
+}
+  .dashboard-area{
+    padding: 30px 50px;
+}
+  .side__bar {
+    max-width: 320px;
+    position: fixed;
+    right: -400px;
+    height: 85vh;
+    overflow: scroll;
+}
+
+.side__bar.show {
+    right: 0;
+    z-index: 99;
+}
+
+}
+
+
+/* small screen :320px. */
+@media (max-width: 767px) {
+  main {
+    height: 100vh;
+    display: block;
+}
+  .bar__icon{
+    display: flex;
+    right: 20px;
+    top: 24px;
+}
+  .dashboard-area{
+    padding: 30px 24px;
+    width: auto;
+}
+
+.dashboard__content > h3 {
+    font-size: 24px;
+}
+  .side__bar {
+    max-width: 320px;
+    position: fixed;
+    right: -400px;
+    padding-top: 50px;
+    justify-content: flex-start;
+}
+
+.side__btns {
+    position: fixed;
+    z-index: 99;
+    bottom: 22px;
+    width: calc(100% - 34px);
+    right: 20px;
+    max-width: 330px;
+    visibility: hidden;
+}
+
+.show .side__btns {
+    visibility: visible;
+}
+
+.side__bar.show {
+    right: 0;
+    z-index: 99;
+    overflow: scroll;
+    height: 100%;
+}
+
+.content__blk {
+    margin-bottom: 30px;
+}
+.src__blk {
+  max-width: 270px;
+}
+
+.table__blk table {
+  min-width: 700px;
+}
+
+.table__blk {
+  overflow: auto;
+}
+
+}
+
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {}
+
+}
